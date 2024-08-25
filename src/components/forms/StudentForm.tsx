@@ -124,8 +124,11 @@ const StudentForm = ({
           type="date"
         />
         <div className="flex flex-col gap-2 w-full md:w-1/4">
-          <label className="text-xs text-gray-500">Sex</label>
+          <label htmlFor="sex" className="text-xs text-gray-500">
+            Sex
+          </label>
           <select
+            id="sex"
             className="ring-[1.5px] ring-gray-300 p-2 rounded-md text-sm w-full"
             {...register("sex")}
             defaultValue={data?.sex}
